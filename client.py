@@ -1,7 +1,7 @@
 import asyncio, websockets, json
 
 async def hello():
-    uri = "ws://localhost:5678/get_location/12"
+    uri = "ws://localhost:8765/sensor/758"
     async with websockets.connect(uri) as websocket:
         await websocket.send('give')
         while True:
